@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher</title>
+    </head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+    <style>
+       /* .table td {
+          text-align: center;
+          }  */
+          table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+      .gre{
+          color: red;
+      }
+      .t1{
+          color: black;
+          font-weight: bold;
+      }
+      .c{
+          background-color : rgb(83, 172, 202);
+      }
+    </style>
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #c5e1a5;">
+            <div  >            
+                <a class="t1" style="margin-left: 500px;">Result Management Application</a> 
+                <a class="btn btn-primary c" href="#" role="button" style="margin-left:400px;" >logout</a>                 
+              </div>
+            </nav>
+            
+          <div style="margin-left: 100px; margin-top:100px; margin-bottom: 20px; font-weight: bold;">Find Result</div>
+          
+          <div class="input-group mb-3" style="margin-left: 100px;margin-right: 100px;">
+         
+            <form action="display">
+                <div class="form-group ">
+                  <label for="rollno" >Roll no</label>
+                    <input type="text"  class="form-control-plaintext" name="rollno"  placeholder="Roll no" required>
+                </div>
+                <div class="form-group ">
+                  <label for="Name">Name</label>
+                    <input type="text" class="form-control" name="Name" placeholder="Name" required>
+                </div>
+                
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-primary">Clear</button>
+              </form>
+           
+          </div>
+</html>

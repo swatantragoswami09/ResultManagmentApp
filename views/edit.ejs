@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <style type="text/css">
+    body {
+      margin: 100px 10px 100px;
+      text-align: center;
+    }
+    form {
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <h4>Edit Details</h4>
+
+    <form action="save" method="post">
+      <div class="form-group">
+        <label for="rollno">Roll no</label>
+        <input
+          type="text"
+          class="form-control-plaintext"
+          name="rollno"
+          placeholder="Roll no"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="Name"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="DOB">Date of Birth</label>
+        <input
+          type="text"
+          class="form-control"
+          name="DOB"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="Score">Score</label>
+        <input
+          type="text"
+          class="form-control"
+          name="Score"
+          placeholder="Score"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-primary">Clear</button>
+    </form>
+  </body>
+</html>

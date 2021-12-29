@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher</title>
+    </head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+    <style>
+       /* .table td {
+          text-align: center;
+          }  */
+          table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+      .gre{
+          color: red;
+      }
+      .t1{
+          color: black;
+          font-weight: bold;
+      }
+      .c{
+          background-color : rgb(83, 172, 202);
+      }
+    </style>
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #c5e1a5;">
+          <div  >            
+              <a class="t1" style="margin-left: 500px;">Result Management Application</a> 
+              <a class="btn btn-primary c" href="#" role="button" style="margin-left:400px;" >logout</a>                 
+            </div>
+            
+          </nav>
+          <div >   
+            <a class="btn btn-primary c" href="/NewResult" role="button" style="margin-top: 10px; margin-left:1100px;">Add Record</a>       
+            <!-- <p style="margin-left: 100px">Total students : </p>   -->
+        </div>
+        <div style="margin-left: 100px; margin-right: 100px;">
+          <table class="table" >
+            <thead >
+              <tr>
+                <!-- <th>Id</th> -->
+                <th scope="col">Roll no.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date of Birth</th>
+                <th scope="col">Score</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% datas.forEach(function(data,index){ %>
+                <tr>
+                  <!-- <th><%=data.id%></th> -->
+                  <th scope="row"><%=data.rollno%></th>
+                  <td><%= data.Name%></td>
+                  <td><%= data.DOB %></td>
+                  <td><%= data.Score%></td>
+                  <td>
+                    <a href="/edit/<%=data.id%>">Edit</a>
+                    <a href="/delete/<%=data.id%>" >Delete</a>
+							    </td>
+                </tr>
+              <% });%>
+                
+              
+             
+            </tbody>
+          </table>
+        </div>
+
+</html>
